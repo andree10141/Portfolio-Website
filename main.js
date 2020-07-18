@@ -55,6 +55,7 @@ TweenMax.staggerFrom(
 
 
 t1.to(".overlay", .5, {
+  
   opacity: 1,
   ease: Expo.easeIn
 });
@@ -79,48 +80,52 @@ $(document).on("click", ".menu-toggle", function() {
   t1.reversed(!t1.reversed());
 });
 
+
 $(document).on("click", ".close-btn", function() {
   t1.reversed(!t1.reversed());
 });
+
+
 
 t1.reverse();
 $(document).on("click", "li", function() {
   t1.reversed(!t1.reversed());
 });
 
+
 var image = document.getElementsByClassName("hero-img-parallax");
 new simpleParallax(image, {
-  scale: 1.8
+  scale: 1.4
 });
 
 var image = document.getElementsByClassName("project-1-img");
 new simpleParallax(image, {
-  scale: 1.8
+  scale: 1.4
 });
 
 var image = document.getElementsByClassName("project-2-img");
 new simpleParallax(image, {
-  scale: 1.8
+  scale: 1.4
 });
 
 var image = document.getElementsByClassName("project-3-img");
 new simpleParallax(image, {
-  scale: 1.8
+  scale: 1.4
 });
 
 var image = document.getElementsByClassName("project-4-img");
 new simpleParallax(image, {
-  scale: 1.8
+  scale: 1.4
 });
 
 var image = document.getElementsByClassName("project-5-img");
 new simpleParallax(image, {
-  scale: 1.8
+  scale: 1.4
 });
 
 var image = document.getElementsByClassName("project-6-img");
 new simpleParallax(image, {
-  scale: 1.8
+  scale: 1.4
 });
 
 // Select all links with hashes
@@ -166,17 +171,4 @@ $('a[href*="#"]')
       }
     }
   });
-
-var on = document.getElementsByClassName(overlay)
-  //what im adding
-function toogleOn(){
-    var on = document.getElementsByClassName(overlay)
-    .addEventListener("click",menu-toggle);
-
-    if (on.style.display = "none") {
-        on.style.display = "block";
-      } 
-    else {
-        on.style.display = "none";
-    }};
 
